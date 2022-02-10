@@ -2,62 +2,64 @@ var respuesta_ws = {"Error_spcCode":null,"Error_spcMessage":null,"listOfOrderSpa
 
 
 var json_entrada = {
-  "requestSpaceSchedule": {
-      "headerMessage": {
-          "idOrder": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].orderId,
-          "nameChannel": "IVR"
-      },
-      "detailMessage": {
-          "idClient": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].numberDocument,
-          "nameClient": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].nameClient,
-          "priorityAttention": "Normal",
-          "valueClient": null,
-          "isNewSchedule":"S",
-          "products": {
-              "product": [
-                  {
-                      "contacts": {
-                          "contact": [
-                              {
-                                  "nameContact": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].listOfContacts.contacts[0].nameContact,
-                                  "phoneContact": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].listOfContacts.contacts[0].phoneContact,
-                                  "cellPhoneNumber": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].listOfContacts.contacts[0].cellPhoneNumber
-                              }
-                          ]
-                      },
-                      "use": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].useService,
-                      "uenCalculated": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].uenCalculated,
-                      "nameProduct": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].nameProduct,
-                      "namePlan": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].planCommercial,
-                      "transaction": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].transaction,
-                      "addressService": {
-                          "idAddressService": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].listOfDirectionService.directionService[0].idDirectionService,
-                          "nomenclatureAddressService": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].listOfDirectionService.directionService[0].nameDirectionService,
-                          "cityAdressService": "05631000",
-                          "departamentAdressService": "05",
-                          "neighborhoodAdressService": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].listOfDirectionService.directionService[0].neighborhoodDirectionService,
-                          "referenceAdressService": null,
-                          "coordinateXAdressService": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].listOfDirectionService.directionService[0].coordinateXDirectionService,
-                          "coordinateYAdressService": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].listOfDirectionService.directionService[0].coordinateYDirectionService,
-                          "stateGIS": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].listOfDirectionService.directionService[0].stateGIS,
-                          "rural": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].listOfDirectionService.directionService[0].rural,
-                          "chainNatural": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].listOfDirectionService.directionService[0].chainNatural
-                      },
-                      "technology": "GPON",
-                      "attributes": {
-                          "attribute": [
-                              {
-                                  "name": "NA",
-                                  "value": "NA"
-                              }
-                          ]
-                      }
-                  }
-              ]
-          }
-      }
-  }
-};
+    "datos_entrada": {
+        "requestSpaceSchedule": {
+            "headerMessage": {
+                "idOrder": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].orderId,
+                "nameChannel": "IVR"
+            },
+            "detailMessage": {
+                "idClient": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].numberDocument,
+                "nameClient": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].nameClient,
+                "priorityAttention": "Normal",
+                "valueClient": null,
+                "isNewSchedule":"S",
+                "products": {
+                    "product": [
+                        {
+                            "contacts": {
+                                "contact": [
+                                    {
+                                        "nameContact": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].listOfContacts.contacts[0].nameContact,
+                                        "phoneContact": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].listOfContacts.contacts[0].phoneContact,
+                                        "cellPhoneNumber": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].listOfContacts.contacts[0].cellPhoneNumber
+                                    }
+                                ]
+                            },
+                            "use": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].useService,
+                            "uenCalculated": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].uenCalculated,
+                            "nameProduct": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].nameProduct,
+                            "namePlan": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].planCommercial,
+                            "transaction": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].transaction,
+                            "addressService": {
+                                "idAddressService": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].listOfDirectionService.directionService[0].idDirectionService,
+                                "nomenclatureAddressService": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].listOfDirectionService.directionService[0].nameDirectionService,
+                                "cityAdressService": "05631000",
+                                "departamentAdressService": "05",
+                                "neighborhoodAdressService": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].listOfDirectionService.directionService[0].neighborhoodDirectionService,
+                                "referenceAdressService": null,
+                                "coordinateXAdressService": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].listOfDirectionService.directionService[0].coordinateXDirectionService,
+                                "coordinateYAdressService": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].listOfDirectionService.directionService[0].coordinateYDirectionService,
+                                "stateGIS": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].listOfDirectionService.directionService[0].stateGIS,
+                                "rural": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].listOfDirectionService.directionService[0].rural,
+                                "chainNatural": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].listOfDirectionService.directionService[0].chainNatural
+                            },
+                            "technology": respuesta_ws.listOfOrderSpaceSchedule.ordersSpaceSchedule[0].listOfProductsSpaceSchedule.productsSpaceSchedule[0].technology,
+                            "attributes": {
+                                "attribute": [
+                                    {
+                                        "name": "NA",
+                                        "value": "NA"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
 
 
 console.log(json_entrada)
